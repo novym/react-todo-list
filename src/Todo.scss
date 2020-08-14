@@ -1,0 +1,68 @@
+@import "./variables";
+
+.todo-container {
+  background: #8e44ad;
+  box-shadow: 0 0 0 32px rgba(#9b59b6, .2);
+  margin: 0 auto;
+  max-width: 80%;
+  padding: 20px;
+
+  h1 {
+    color: $text-color;
+    font-weight: normal;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  h5 {
+    color: darken($text-color, 15%);
+    font-weight: normal;
+    margin-bottom: 20px;
+  }
+
+  ul {
+    list-style: none;
+    min-height: 32px;
+  }
+
+  li {
+    background: rgba(#9b59b6, .4);
+    color: $text-color;
+    cursor: pointer;
+    display: flex;
+    flex-wrap: nowrap;
+    font-size: 20px;
+    margin-bottom: 8px;
+    padding: 12px 12px;
+    width: 100%;
+
+    &:hover {
+      background: rgba(#9b59b6, .8);
+    }
+
+    .name {
+      display: inline-block;
+      flex-grow: 1;
+      line-height: 32px;
+      text-transform: capitalize;
+      background: transparent;
+
+      &.complete {
+        color: rgba($text-color, .5);
+        text-decoration: line-through;
+      }
+    }
+
+    .remove-button {
+      color: $text-color;
+      background: #c0392b;
+      border: none;
+      font-size: 20px;
+      padding: 4px 8px;
+
+      &:hover {
+        background:#e74c3c;
+      }
+    }
+  }
+}

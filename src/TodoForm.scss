@@ -1,0 +1,47 @@
+@import "./variables";
+
+.todo-form {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 40px;
+
+  label {
+    color: darken($text-color, 15%);
+    display: inline-block;
+    margin-bottom: 12px;
+    width: 100%;
+  }
+
+  input {
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #95a5a6;
+    color: $text-color;
+    flex-grow: 1;
+    font-size: 24px;
+    height: 40px;
+    line-height: 32px;
+    margin-right: 12px;
+    padding: 0 4px;
+
+    &:focus {
+      border-color: #3498db;
+      outline: none;
+    }
+  }
+
+  button {
+    background: transparent;
+    border: 1px solid #27ae60;
+    color: #27ae60;
+    cursor: pointer;
+    font-size: 16px;
+    height: 40px;
+    padding: 8px 12px;
+
+    &:hover {
+      border-color: #2ecc71;
+      color: #2ecc71;
+    }
+  }
+}
