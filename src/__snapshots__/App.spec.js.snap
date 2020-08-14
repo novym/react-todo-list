@@ -1,0 +1,81 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`App snapshot renders 1`] = `
+<div
+  id="app"
+>
+  <div
+    className="todo-container"
+  >
+    <h1>
+      Chore List
+    </h1>
+    <hr />
+    <h5>
+      (click to complete)
+    </h5>
+    <ul>
+      <li>
+        <div
+          className="name "
+          onClick={[Function]}
+        >
+          take out trash
+        </div>
+        <button
+          className="remove-button"
+          onClick={[Function]}
+        >
+          <span
+            className="material-icons"
+          >
+            delete_outline
+          </span>
+        </button>
+      </li>
+      <li>
+        <div
+          className="name "
+          onClick={[Function]}
+        >
+          sweep floor
+        </div>
+        <button
+          className="remove-button"
+          onClick={[Function]}
+        >
+          <span
+            className="material-icons"
+          >
+            delete_outline
+          </span>
+        </button>
+      </li>
+    </ul>
+    <hr />
+    <form
+      className="todo-form"
+      onSubmit={[Function]}
+    >
+      <label
+        htmlFor="todo"
+      >
+        New Item
+      </label>
+      <input
+        id="todo"
+        name="todo"
+        onChange={[Function]}
+        required={true}
+        type="text"
+        value=""
+      />
+      <button
+        type="submit"
+      >
+        ADD
+      </button>
+    </form>
+  </div>
+</div>
+`;
